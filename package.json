@@ -1,21 +1,21 @@
 {
-  "name": "smart-reading-cours",
+  "name": "reading-courses",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://KristinaShepeleva.github.io/smart-reading-cours",
+  "homepage": "https://KristinaShepeleva.github.io/reading-courses",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /smart-reading-cours/"
+    "build": "parcel build src/*.html --public-url /reading-courses/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KristinaShepeleva/smart-reading-cours.git"
+    "url": "git+https://github.com/KristinaShepeleva/reading-courses.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "KristinaShepeleva <shepelevakristina52@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KristinaShepeleva/smart-reading-cours/issues"
+    "url": "https://github.com/KristinaShepeleva/reading-courses/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"

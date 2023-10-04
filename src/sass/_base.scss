@@ -1,0 +1,146 @@
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: local('Gilroy-Bold'),
+        url('../fonts/Gilroy-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: local('Gilroy-Regular'),
+        url('../fonts/Gilroy-Regular.ttf') format('truetype');
+}
+
+
+
+:root {
+    /* Colors */
+    --primary-text-color: #3F3F3F;
+    --white: #FFFFFF;
+
+    --accent-fiolet: #957DF3;
+    --accent-blue: #64A5F7;
+    --accent-orange: #FFB967;
+    --accent-green: #92E1CA;
+    --accent-button: linear-gradient(270deg, #3786EE -10.71%, #70AEF9 100%);
+    
+   
+    /* BG colors */
+    --background-color: linear-gradient(92deg, #FFCD90 5.52%, #FF8059 91.75%);
+
+    /* Others */
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --duration: 250ms;
+
+    /* Fonts */
+    --main-font: "Gilroy-Regular";
+    --secondary-font: "Gilroy-Bold";
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+button,
+select {
+    font: inherit;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: var(--main-font);
+    color: var(--primary-text-color);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    background-color: #F8FAFF;
+
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100vw;
+    position: relative;
+
+
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1170px;
+    }
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
